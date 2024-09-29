@@ -110,6 +110,9 @@ main{
   max-width: 800px;
   min-height: 100dvh;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .light-dark-icon{
@@ -182,4 +185,36 @@ main{
 
 .my-socials a:hover{
   opacity: 1;
+}
+
+section h1{
+  font-size: 1.825rem;
+}
+
+.projects-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+}
+
+.project .upper-project{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;  
+}
+
+.projects-grid .project{
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
 }
