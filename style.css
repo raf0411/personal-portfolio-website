@@ -217,7 +217,8 @@ section h1{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .project .project-img{
@@ -327,4 +328,9 @@ section h1{
 .uni-link{
   color: hsl(350, 70%, 50%);
   font-weight: 600;
+  transition: .2s;
+}
+
+.uni-link:hover{
+  opacity: .8;
 }
