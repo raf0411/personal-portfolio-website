@@ -107,7 +107,8 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 800px;
+  z-index: 99;
 }
 
 nav ul{
@@ -129,9 +130,9 @@ nav ul li a:hover{
 /* HOME PAGE */
 
 body{
-  max-width: 1100px;
+  max-width: 100dvw;
   min-height: 100dvh;
-  width: 50dvw;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -149,6 +150,7 @@ main .intro-section{
   align-items: flex-start;
   justify-content: space-between;  
   gap: 5rem;
+  /* flex-wrap: wrap-reverse; */
 }
 
 .intro-section .left-container .greeting{
@@ -237,7 +239,7 @@ main .intro-section .left-container{
   opacity: .8;
   border: 1px solid hsla(0, 0%, 100%, .2);
   padding: .2em 1em;
-  border-radius: 4px;
+  border-radius: 12px;
   transition: .2s;
 }
 
@@ -299,6 +301,7 @@ main .intro-section .left-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem;
+  row-gap: 3rem;
 }
 
 .publication-section{
@@ -330,6 +333,14 @@ main .intro-section .left-container{
   gap: .825rem;
 }
 
+.publication .btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
 .certificates-section{
   display: flex;
   flex-direction: column;
@@ -350,6 +361,7 @@ main .intro-section .left-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 footer{
@@ -365,7 +377,69 @@ footer .copyright a:hover{
   color: var(--clr-white);
 }
 
+/* BLOGS */
+
+main .blogs-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.blog{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid hsla(0, 0%, 100%, .1);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  transition: .2s;
+}
+
+.blog:hover{
+  border: 1px solid hsla(0, 0%, 100%, .8);
+}
+
+.blog .blog-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 70%;
+}
+
+.blog-date{
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+}
+
 /* UTILITIES */
+
+.actual-blog{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.actual-blog .title-date{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .3rem;
+}
+
+.actual-blog .title-date h1{
+  font-size: 3.5rem;
+}
+
+.actual-blog img{
+  aspect-ratio: 1/16;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 24px;
+}
 
 .publish-site-btn{
   background-color: var(--clr-white);
