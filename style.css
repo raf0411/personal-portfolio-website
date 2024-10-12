@@ -320,10 +320,13 @@ main .intro-section .left-container{
   border: 1px solid hsla(0, 0%, 100%, .2);
   border-radius: 4px;
   padding: 1rem;
+  gap: 2rem;
 }
 
 .publication-section .publication img{
-  object-fit: cover;
+  object-fit: contain;
+  width: 300px;
+  height: 150px;
 }
 
 .publication .inner-publication{
