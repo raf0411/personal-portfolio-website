@@ -18,10 +18,11 @@
    <script src="https://kit.fontawesome.com/7139eb52d7.js" crossorigin="anonymous" defer></script>
    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" defer></script>
 </head>
-<body>
+<body class="">
   <nav>
-    <button class="dark-light-mode-btn">
+    <button class="dark-light-mode-btn" id="dark-light-mode-btn">
       <i class="fa-regular fa-sun fa-xl" style="color: #ffffff;"></i>
+      <i class="fa-regular fa-moon fa-xl"></i>
     </button>
 
     <ul>
@@ -39,9 +40,8 @@
         <h1 class="greeting">yo sup, I'm Raffi.</h1>
   
         <p class="details">
-          20 year old
           <a href="https://www.google.com/maps/place/Jakarta/@-6.2297465,106.829518,11z/data=!3m1!4b1!4m6!3m5!1s0x2e69f3e945e34b9d:0x5371bf0fdad786a2!8m2!3d-6.1944491!4d106.8229198!16zL20vMDQ0cnY?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">
-            <i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-location-dot fa-lg"></i>
           </a>
           <span>Jakarta, Indonesia <img src="../img/indonesia.png" alt="indonesian flag"></span>
         </p>
@@ -54,13 +54,13 @@
           <div class="left-socials">
             <a href="https://www.linkedin.com/in/raissa-raffi-darmawan/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
             <a href="https://github.com/raf0411" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
-            <a href="https://raffidarmawan0411@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="mailto:me@raffidarmawan0411@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
           </div>
   
-          <button class="cv-btn">
+          <a target="_blank" href="https://drive.google.com/file/d/1lruplqW7fZUZux9kt0ZYAWj2V-NoU8E2/view?usp=sharing" class="cv-btn">
             Download CV
             <i class="fa-solid fa-file-arrow-down" style="color: #ffffff;"></i>
-          </button>
+          </a>
         </div>
       </div>
   
@@ -109,35 +109,38 @@
       <div class="projects">
 
         <div class="project">
-          <img src="https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png" alt="project image">
-          <h1 class="project-title">project title</h1>
-          <p class="project-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente laudantium aliquid assumenda, expedita...</p>
+          <img src="../img/projects/netflix_clone_landing_page.png" alt="project image">
+          <h1 class="project-title">Netflix Clone Landing Page</h1>
+          <p class="project-desc">A responsive static netflix clone landing page using HTML, CSS, and JavaScript.</p>
 
           <div class="tools">
             <span><i class="fa-brands fa-html5 fa-lg" style="color: #ffffff;"></i></span>
-            <span><i class="fa-brands fa-html5 fa-lg" style="color: #ffffff;"></i></span>
-            <span><i class="fa-brands fa-html5 fa-lg" style="color: #ffffff;"></i></span>
+            <span><i class="fa-brands fa-css3-alt fa-lg" style="color: #ffffff;"></i></span>
+            <span><i class="fa-brands fa-js fa-lg" style="color: #ffffff;"></i></span>
           </div>
 
           <div class="demo">
-            <a href="#"><i class="fa-brands fa-github fa-lg" style="color: #000;"></i> Repository</a>
-            <a href="#"><i class="fa-solid fa-globe fa-lg" style="color: #000;"></i> Demo</a>
+            <a target="_blank" href="https://github.com/raf0411/simple-beginner-projects/tree/main/Netflix-Clone"><i class="fa-brands fa-github fa-lg" style="color: #000;"></i> Repository</a>
+            <a target="_blank" href="https://raf0411.github.io/simple-beginner-projects/Netflix-Clone/"><i class="fa-solid fa-globe fa-lg" style="color: #000;"></i>Demo</a>
           </div>
         </div>
+
         <div class="project">
-          <img src="https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png" alt="project image">
-          <h1 class="project-title">project title</h1>
-          <p class="project-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente laudantium aliquid assumenda, expedita...</p>
+          <img src="../img/projects/movie_web_app.png" alt="project image">
+          <h1 class="project-title">Movie Web App</h1>
+          <p class="project-desc">A Movie web app that can search and view details of movies using the TMDB API with ReactJS.</p>
 
           <div class="tools">
-            <span><i class="fa-brands fa-html5 fa-lg" style="color: #ffffff;"></i></span>
-            <span><i class="fa-brands fa-html5 fa-lg" style="color: #ffffff;"></i></span>
-            <span><i class="fa-brands fa-html5 fa-lg" style="color: #ffffff;"></i></span>
+            <span><i class="fa-brands fa-react fa-lg" style="color: #ffffff;"></i></span>
+            <span><i class="fa-brands fa-npm fa-lg" style="color: #ffffff;"></i></span>
+            <span class="item-7"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z"/>
+            </svg></span>
           </div>
 
           <div class="demo">
-            <a href="#"><i class="fa-brands fa-github fa-lg" style="color: #000;"></i> Repository</a>
-            <a href="#"><i class="fa-solid fa-globe fa-lg" style="color: #000;"></i> Demo</a>
+            <a target="_blank" href="https://github.com/raf0411/react-movie-web-app"><i class="fa-brands fa-github fa-lg" style="color: #000;"></i> Repository</a>
+            <a target="_blank" href="#"><i class="fa-solid fa-globe fa-lg" style="color: #000;"></i> Demo</a>
           </div>
         </div>
 
@@ -178,16 +181,21 @@
       <div class="certificates">
 
         <div class="certificate">
-          <img src="" alt="certificate image">
-          <h3 class="certificate-title">Certificate Title</h3>
+          <a target="_blank" href="https://www.freecodecamp.org/certification/raf0411/responsive-web-design"><img src="../img/certificates/responsive_web_design.png" alt="certificate image"></a>
+          <label class="source">FreeCodeCamp</label>
+          <label class="certificate-title">Responsive Web Design</label>
         </div>
+
         <div class="certificate">
-          <img src="" alt="certificate image">
-          <h3 class="certificate-title">Certificate Title</h3>
+          <a target="_blank" href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxOTMzIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvNzUxMDI1N183NTYxOTk1MTczMDI5ODgwNTgzNS5wbmciLCJ1c2VybmFtZSI6IlJhaXNzYSBSYWZmaSBEYXJtYXdhbiJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4511%2FIntroduction-to-Front-End-Development%2Fcertificate%2Fdownload-skillup&%24web_only=true"><img src="../img/certificates/Intro to Frontend - Simplilearn-1.png" alt="certificate image"></a>
+          <label class="source">Simplilearn</label>
+          <label class="certificate-title">Introduction to Front End Development</label>
         </div>
+
         <div class="certificate">
-          <img src="" alt="certificate image">
-          <h3 class="certificate-title">Certificate Title</h3>
+          <a target="_blank" href="https://www.dicoding.com/certificates/JLX14VYV5X72"><img src="../img/certificates/dicoding_javascript_certification-1.png" alt="certificate image"></a>
+          <label class="source">Dicoding Academy</label>
+          <label class="certificate-title">Belajar Dasar Pemrograman JavaScript</label>
         </div>
 
       </div>
