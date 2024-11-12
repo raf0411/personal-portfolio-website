@@ -3,7 +3,7 @@
   --clr-red-gradient: linear-gradient(90deg,rgba(6, 14, 29, 1) 0%,rgba(48, 8, 15, 1) 100%);
   --clr-red: hsl(350, 71%, 23%);
   --clr-white-50: hsla(0, 0%, 100%, 0.8);
-  --clr-hover-100: hsla(0, 0%, 100%, .1);
+  --clr-hover-100: hsla(0, 0%, 100%, .2);
   --clr-hover-200: hsla(0, 0%, 100%, .8);
   --clr-black: #000;
 
@@ -18,7 +18,7 @@
   --clr-red-gradient: #FFF;
   --clr-red: hsl(350, 71%, 15%);
   --clr-white-50: hsla(0, 0%, 0%, 0.8);
-  --clr-hover-100: hsla(0, 0%, 0%, 0.1);
+  --clr-hover-100: hsla(0, 0%, 0%, 0.2);
   --clr-hover-200: hsla(0, 0%, 0%, 0.8);
   --clr-black: #ffffff;
 }
@@ -144,7 +144,7 @@ nav{
 nav ul{
   display: flex;
   align-items: flex-end;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 nav ul li a{
@@ -259,6 +259,10 @@ main .intro-section .left-container{
   transition: .2s;
 }
 
+.socials .left-socials a i{
+  color: var(--clr-white);
+}
+
 .socials .left-socials a:hover{
   opacity: 1;
 }
@@ -266,6 +270,10 @@ main .intro-section .left-container{
 .left-container .socials .cv-btn:hover{
   border: 1px solid var(--clr-hover-200);
   opacity: 1;
+}
+
+.left-container .socials .cv-btn i{
+  color: var(--clr-white);
 }
 
 .intro-section .right-container{
@@ -277,6 +285,7 @@ main .intro-section .left-container{
   height: 300px;
   object-fit: cover;
   border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .skills-section .skills, .skills-section .learning{
@@ -411,6 +420,10 @@ main .intro-section .left-container{
   justify-content: flex-start;
   gap: 1rem;
   width: 100%;
+}
+
+.publication .btn-container a i{
+  color: var(--clr-black);
 }
 
 .certificates-section{
@@ -599,14 +612,15 @@ main .blogs-section{
   display: flex;
   align-items: center;
   gap: .5rem;
-  background-color: var(--clr-white);
-  color: var(--clr-black);
+  background-color: #fff;
+  color: #000;
   font-weight: var(--fw-semibold);
   font-size: .825rem;
   padding:  .3em .5em;
   border-radius: 8px;
   transition: .2s;
   opacity: .8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .demo a:hover{
