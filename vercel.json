@@ -1,5 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/html", "destination": "/home.html" }
-  ]
+  "public": "html",
+  "rewrites": [{ "source": "/", "destination": "/home.html" }]
 }
