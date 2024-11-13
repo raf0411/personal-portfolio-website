@@ -5,8 +5,10 @@
   --clr-white-50: hsla(0, 0%, 100%, 0.8);
   --clr-hover-100: hsla(0, 0%, 100%, .2);
   --clr-hover-200: hsla(0, 0%, 100%, .8);
-  --clr-black: #000;
-
+  --clr-hover-300: hsl(219, 61%, 29%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-menu-clr: hsl(219, 66%, 7%);
+  --clr-menu-btn: hsl(219, 65%, 12%);
   --fw-thin: 400;
   --fw-normal: 500;
   --fw-semibold: 600;
@@ -20,7 +22,10 @@
   --clr-white-50: hsla(0, 0%, 0%, 0.8);
   --clr-hover-100: hsla(0, 0%, 0%, 0.2);
   --clr-hover-200: hsla(0, 0%, 0%, 0.8);
-  --clr-black: #ffffff;
+  --clr-black: #fff;
+  --clr-hover-300: hsl(0, 0%, 62%);
+  --clr-menu-clr: hsl(0, 0%, 0%);
+  --clr-menu-btn: hsl(0, 0%, 100%);
 }
 
 *,
@@ -53,6 +58,8 @@ ul{
 
 button{
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 a{
@@ -96,6 +103,63 @@ img{
 }
 
 /* NAVBAR */
+
+.hidden-menu{
+  background-color: var(--clr-menu-clr);
+  height: 100dvh;
+  width: 100vw;
+  position: fixed;
+  left: -3000px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  z-index: 999;
+  transition: .5s ease;
+}
+
+.hidden-menu.active{
+  left: 0;
+}
+
+.hidden-menu ul li{
+  font-size: 1.3rem;
+  color: var(--clr-white-50);
+  font-weight: var(--fw-semibold);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden-menu ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.close-hidden-menu-btn i{
+  color: #fff;
+}
+
+.hidden-menu .hidden-menu-header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.hidden-menu .hidden-menu-header h1{
+  color: #fff;
+}
 
 .dark-light-mode-btn{
   opacity: .5;
@@ -180,10 +244,9 @@ main .intro-section{
   align-items: flex-start;
   justify-content: space-between;  
   gap: 5rem;
-  /* flex-wrap: wrap-reverse; */
 }
 
-.intro-section .left-container .greeting{
+.greeting{
   font-size: 3rem;
 }
 
@@ -280,7 +343,7 @@ main .intro-section .left-container{
   height: 100%;
 }
 
-.intro-section .right-container .profile-img{
+.profile-img{
   width: 800px;
   height: 300px;
   object-fit: cover;
@@ -414,14 +477,6 @@ main .intro-section .left-container{
   gap: .825rem;
 }
 
-.publication .btn-container{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  width: 100%;
-}
-
 .publication .btn-container a i{
   color: var(--clr-black);
 }
@@ -524,6 +579,49 @@ main .blogs-section{
 }
 
 /* UTILITIES */
+
+.close-hidden-menu-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: .2s;
+}
+
+.close-hidden-menu-btn:hover{
+  background-color: var(--clr-hover-100);
+}
+
+.menu-btn{
+  background-color: var(--clr-menu-btn);
+  display: block;
+  width: 100%;
+  align-self: center;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  transition: .5s ease;
+}
+
+.menu-btn:hover{
+  background-color: var(--clr-hover-300);
+}
+
+.hamburger-btn{
+  display: none;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  transition: .2s;
+}
+
+.hamburger-btn:hover{
+  background-color: var(--clr-hover-100);
+  border-radius: 50%;
+}
+
+.hamburger-btn i{
+  color: var(--clr-white);
+}
 
 .cv-btn{
   display: flex;
@@ -653,3 +751,101 @@ p{
   opacity: 1;
 }
 
+@media (max-width: 850px) {
+  nav{
+    flex-direction: row-reverse;
+    width: 70%;
+  }
+
+  body{
+    width: 70%;
+  }
+
+  main .intro-section{
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+  }
+  
+  .greeting{
+    font-size: 2rem;
+  }
+
+  .profile-img{
+    width: 500px;
+    aspect-ratio: 16/9;
+  }
+
+  nav ul{
+    display: none;
+    visibility: hidden;
+  }
+
+  .intro-section .left-container .socials{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hamburger-btn{
+    display: block;
+    visibility: visible;
+  }
+
+  .projects-section .projects{
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section .projects-header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  
+  .publication-section .publication{
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+  }
+
+  .publication img{
+    display: none;
+    visibility: hidden;
+  }
+
+  .publish-site-btn{
+    align-self: center;
+  }
+
+  .publication .inner-publication{
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .certificates{
+    grid-template-columns: 1fr;
+  }
+
+  .certificates-section .certificates-header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .blog-details .blog-title{
+    font-size: 2rem;
+  }
+
+  .actual-blog img{
+    width: 500px;
+    height: 300px;
+  }
+
+  .actual-blog .title-date h1{
+    font-size: 2.5rem;
+  }
+}

@@ -19,17 +19,36 @@
    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" defer></script>
 </head>
 <body>
+  <div class="hidden-menu" id="hidden-menu">
+    <div class="hidden-menu-header">
+      <h1>Menu</h1>
+      <button class="close-hidden-menu-btn" id="close-hidden-menu-btn">
+        <i class="fa-solid fa-x fa-lg"></i>
+      </button>
+    </div>
+
+    <ul>
+      <li><a class="menu-btn" id="menu-btn" href="./home.html">Home</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./projects.html">Projects</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./certificates.html">Certificates</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./blogs.html">Blogs</a></li>
+    </ul>
+  </div>
+
   <nav>
     <button class="dark-light-mode-btn" id="dark-light-mode-btn">
       <i class="fa-regular fa-sun fa-xl" style="color: #ffffff;"></i>
       <i class="fa-regular fa-moon fa-xl"></i>
     </button>
 
+    <button class="hamburger-btn" id="hamburger-btn">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </button>
     <ul>
       <li><a href="./home.html">Home</a></li>
       <li><a href="./projects.html">Projects</a></li>
       <li><a href="./certificates.html">Certificates</a></li>
-      <li><a href="./blogs.html">Blogs</a></li>
+      <li><a href="#">Blogs</a></li>
     </ul>
   </nav>
 
@@ -41,7 +60,7 @@
         <div class="blog-details">
           <h3 class="blog-title">Blog Title</h3>
           <p class="blog-desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit repellendus ex quod porro et sint. Odit porro aperiam enim, amet quibusdam doloribus aliquam sint distinctio ipsam quae rerum atque necessitatibus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit repellendus ex quod porro et sint...
           </p>
         </div>
         <span class="blog-date">
