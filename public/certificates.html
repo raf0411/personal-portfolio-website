@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raf's Web</title>
+
+  <link rel="icon" type="image/x-icon" href="../assets/img/logo/logo.svg">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="../styles/style.css">
+
+  <!-- SCRIPTS -->
+  <script src="../js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/7139eb52d7.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" defer></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-57YDKGZRYB" defer></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-57YDKGZRYB');
+  </script>
+</head>
+<body>
+  <div class="hidden-menu" id="hidden-menu">
+    <div class="hidden-menu-header">
+      <h1>Menu</h1>
+      <button class="close-hidden-menu-btn" id="close-hidden-menu-btn">
+        <i class="fa-solid fa-x fa-lg"></i>
+      </button>
+    </div>
+
+    <ul>
+      <li><a class="menu-btn" id="menu-btn" href="../index.html">Home</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./projects.html">Projects</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="#">Certificates</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./blogs.html">Blogs</a></li>
+    </ul>
+  </div>
+
+  <nav>
+    <button class="dark-light-mode-btn" id="dark-light-mode-btn">
+      <i class="fa-regular fa-sun fa-xl" style="color: #ffffff;"></i>
+      <i class="fa-regular fa-moon fa-xl"></i>
+    </button>
+
+    <button class="hamburger-btn" id="hamburger-btn">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </button>
+    <ul>
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="#">Certificates</a></li>
+      <li><a href="./blogs.html">Blogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="certificates-section">
+      <header class="certificates-header">
+        <h1>certificates</h1>
+      </header>
+
+      <div class="certificates">
+
+        <div class="certificate">
+          <a target="_blank" href="https://www.freecodecamp.org/certification/raf0411/responsive-web-design"><img src="../assets/img/certificates/responsive_web_design.webp" alt="certificate image"></a>
+          <label class="source">FreeCodeCamp</label>
+          <label class="certificate-title">Responsive Web Design</label>
+        </div>
+
+        <div class="certificate">
+          <a target="_blank" href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxOTMzIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvNzUxMDI1N183NTYxOTk1MTczMDI5ODgwNTgzNS5wbmciLCJ1c2VybmFtZSI6IlJhaXNzYSBSYWZmaSBEYXJtYXdhbiJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4511%2FIntroduction-to-Front-End-Development%2Fcertificate%2Fdownload-skillup&%24web_only=true"><img src="../assets/img/certificates/simplilearn_frontend.webp" alt="certificate image"></a>
+          <label class="source">Simplilearn</label>
+          <label class="certificate-title">Introduction to Front End Development</label>
+        </div>
+
+        <div class="certificate">
+          <a target="_blank" href="https://www.dicoding.com/certificates/JLX14VYV5X72"><img src="../assets/img/certificates/dicoding_js.webp" alt="certificate image"></a>
+          <label class="source">Dicoding Academy</label>
+          <label class="certificate-title">Belajar Dasar Pemrograman JavaScript</label>
+        </div>
+
+        <div class="certificate">
+          <img src="../assets/img/certificates/insyfest.webp" alt="certificate image">
+          <label class="source">UBP Karawang</label>
+          <label class="certificate-title">Participant of the National "Web Development" Competition INSYFEST</label>
+        </div>
+
+        <div class="certificate">
+          <img src="../assets/img/certificates/workshop_press_start.webp" alt="certificate image">
+          <label class="source">BINUS Game Development Club (BGDC)</label>
+          <label class="certificate-title">Workshop Press Start</label>
+        </div>
+
+        <div class="certificate">
+          <img src="../assets/img/certificates/workshop_SMPHA.webp" alt="certificate image">
+          <label class="source">BINUS</label>
+          <label class="certificate-title">Workshop Smart Mapping for Public Health Application</label>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy; 2024 <a href="../index.html">raf0411.com</a></p>
+  </footer>
+</body>
+</html>
