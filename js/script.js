@@ -3,9 +3,17 @@ const hamburgerBtn = document.getElementById("hamburger-btn");
 const hiddenMenu = document.getElementById("hidden-menu");
 const closeHiddenMenuBtn = document.getElementById("close-hidden-menu-btn");
 const menuBtn = document.getElementById("menu-btn");
+
 let lightmode = localStorage.getItem('lightmode');
 
+updateYear();
 checkLightMode();
+
+function updateYear() {
+  const year = document.getElementById("year");
+  let currentYear = new Date().getFullYear();
+  year.textContent = currentYear;
+}
 
 function enableLightMode() {
   localStorage.setItem("lightmode", "active");
