@@ -613,6 +613,8 @@ main .blogs-section{
   background-color: var(--clr-hover-300);
 }
 
+
+
 .hamburger-btn{
   display: none;
   visibility: hidden;
@@ -670,7 +672,12 @@ main .blogs-section{
   aspect-ratio: 1/16;
   height: 400px;
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 8px;
+}
+
+.blog-list{
+  list-style: disc;
+  padding-left: 1rem;
 }
 
 .publish-site-btn{
