@@ -581,7 +581,7 @@ main .blogs-section{
 }
 
 .content{
-  text-align: justify;
+  text-align: start;
   font-size: .925rem;
 }
 
@@ -669,7 +669,6 @@ main .blogs-section{
 }
 
 .actual-blog img{
-  aspect-ratio: 1/16;
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
@@ -859,11 +858,17 @@ p{
   }
 
   .actual-blog img{
-    width: 500px;
-    height: 300px;
+    object-fit: contain;
   }
 
   .actual-blog .title-date h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .actual-blog pre{
+    overflow: hidden;
+  }
+  .actual-blog h2{
+    font-size: 1.3rem;
   }
 }
