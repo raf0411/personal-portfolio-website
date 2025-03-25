@@ -583,6 +583,7 @@ main .blogs-section{
 .content{
   text-align: start;
   font-size: .925rem;
+  line-height: 1.75rem;
 }
 
 /* UTILITIES */
@@ -669,9 +670,10 @@ main .blogs-section{
 }
 
 .actual-blog img{
-  height: 400px;
+  width: max-content;
   object-fit: cover;
   border-radius: 8px;
+  margin: 0 auto;
 }
 
 .blog-list{
