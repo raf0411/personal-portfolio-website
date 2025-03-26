@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raf's Web</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.svg">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+
+  <!-- SCRIPTS -->
+   <script src="./js/script.js" defer></script>
+   <script src="https://kit.fontawesome.com/7139eb52d7.js" crossorigin="anonymous" defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" defer></script>
+
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-57YDKGZRYB" defer></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-57YDKGZRYB');
+  </script>
+</head>
+<body>
+  <div class="hidden-menu" id="hidden-menu">
+    <div class="hidden-menu-header">
+      <h1>Menu</h1>
+      <button class="close-hidden-menu-btn" id="close-hidden-menu-btn">
+        <i class="fa-solid fa-x fa-lg"></i>
+      </button>
+    </div>
+
+    <ul>
+      <li><a class="menu-btn" id="menu-btn" href="#">Home</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./public/projects.html">Projects</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./public/certificates.html">Certificates</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./public/blogs.html">Blogs</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="./public/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <nav>
+    <button class="dark-light-mode-btn" id="dark-light-mode-btn">
+      <i class="fa-regular fa-sun fa-xl" style="color: #ffffff;"></i>
+      <i class="fa-regular fa-moon fa-xl"></i>
+    </button>
+
+    <button class="hamburger-btn" id="hamburger-btn">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </button>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="./public/projects.html">Projects</a></li>
+      <li><a href="./public/certificates.html">Certificates</a></li>
+      <li><a href="./public/blogs.html">Blogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+  </main>
+
+  <footer>
+    <p class="copyright">&copy; <span id="year">xxxx</span> <a href="#">raf0411.com</a></p>
+  </footer>
+</body>
+</html>
