@@ -977,6 +977,12 @@ p{
   .actual-blog h2{
     font-size: 1.3rem;
   }
+
+  footer{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 490px){

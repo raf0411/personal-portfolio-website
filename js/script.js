@@ -3,7 +3,6 @@ const hamburgerBtn = document.getElementById("hamburger-btn");
 const hiddenMenu = document.getElementById("hidden-menu");
 const closeHiddenMenuBtn = document.getElementById("close-hidden-menu-btn");
 const menuBtn = document.getElementById("menu-btn");
-
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const msgInput = document.getElementById("message");
@@ -72,14 +71,18 @@ function validateContactForm() {
 }
 
 function refreshContactForm() {
-  nameInput.value = ""
-  emailInput.value = ""
-  msgInput.value = ""
+  if (nameInput || emailInput || msgInput) {
+    nameInput.value = ""
+    emailInput.value = ""
+    msgInput.value = ""
+  }
 }
 
-submitBtn.addEventListener("click", () => {
-  validateContactForm()
-})
+if (submitBtn) {
+  submitBtn.addEventListener("click", () => {
+    validateContactForm()
+  })
+}
 
 closeHiddenMenuBtn.addEventListener("click", () => {
   removeHiddenMenu();
