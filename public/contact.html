@@ -73,8 +73,9 @@
         <h1>contact me</h1>
       </header>
   
-      <form action="" method="post">
-        
+      <form action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="138648d7-162e-4673-b572-bab21cf30ab7">
+
         <div class="first-form">
           <div class="inner-form">
             <input placeholder="Name" type="text" name="name" class="name-input" id="name" required>
@@ -87,11 +88,13 @@
           </div>
         </div>
   
-        <textarea placeholder="Feel free to give me any feedback, questions, jobs, or anything else!" name="message" id="message" rows="5"></textarea>
+        <div class="second-form">
+          <textarea placeholder="Feel free to give me any feedback, questions, jobs, or anything else!" name="message" id="message" rows="5"></textarea>
 
-        <p class="error-lbl error-hidden" id="msg-error-lbl">Error</p>
+          <p class="error-lbl error-hidden" id="msg-error-lbl">Error</p>
+        </div>
   
-        <button class="submit-btn" id="submit-btn">Submit Message</button>
+        <button type="submit" class="submit-btn" id="submit-btn">Submit Message</button>
       </form>
     </section>
   </main>
