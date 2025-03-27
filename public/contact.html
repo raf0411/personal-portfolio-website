@@ -13,11 +13,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- STYLES -->
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
 
   <!-- SCRIPTS -->
-   <script src="./js/script.js" defer></script>
+   <script src="../js/script.js" defer></script>
    <script src="https://kit.fontawesome.com/7139eb52d7.js" crossorigin="anonymous" defer></script>
    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" defer></script>
 
@@ -41,11 +41,11 @@
     </div>
 
     <ul>
-      <li><a class="menu-btn" id="menu-btn" href="#">Home</a></li>
-      <li><a class="menu-btn" id="menu-btn" href="./public/projects.html">Projects</a></li>
-      <li><a class="menu-btn" id="menu-btn" href="./public/certificates.html">Certificates</a></li>
-      <li><a class="menu-btn" id="menu-btn" href="./public/blogs.html">Blogs</a></li>
-      <li><a class="menu-btn" id="menu-btn" href="./public/contact.html">Contact</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="../index.html">Home</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="../public/projects.html">Projects</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="../public/certificates.html">Certificates</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="#">Contact</a></li>
+      <li><a class="menu-btn" id="menu-btn" href="../public/blogs.html">Blogs</a></li>
     </ul>
   </div>
 
@@ -59,15 +59,41 @@
       <i class="fa-solid fa-bars fa-xl"></i>
     </button>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="./public/projects.html">Projects</a></li>
-      <li><a href="./public/certificates.html">Certificates</a></li>
-      <li><a href="./public/blogs.html">Blogs</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../public/projects.html">Projects</a></li>
+      <li><a href="../public/certificates.html">Certificates</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="../public/blogs.html">Blogs</a></li>
     </ul>
   </nav>
 
   <main>
+    <section class="contact-section">
+      <header class="contact-header">
+        <h1>contact me</h1>
+      </header>
+  
+      <form action="" method="post">
+        
+        <div class="first-form">
+          <div class="inner-form">
+            <input placeholder="Name" type="text" name="name" class="name-input" id="name" required>
+            <p class="error-lbl error-hidden" id="name-error-lbl">Error</p>
+          </div>
 
+          <div class="inner-form">
+            <input placeholder="Email" type="email" name="email" class="email-input" id="email" required>
+            <p class="error-lbl error-hidden" id="email-error-lbl">Error</p>
+          </div>
+        </div>
+  
+        <textarea placeholder="Feel free to give me any feedback, questions, jobs, or anything else!" name="message" id="message" rows="5"></textarea>
+
+        <p class="error-lbl error-hidden" id="msg-error-lbl">Error</p>
+  
+        <button class="submit-btn" id="submit-btn">Submit Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
