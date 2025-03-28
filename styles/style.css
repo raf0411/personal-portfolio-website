@@ -664,6 +664,24 @@ main .blogs-section{
   cursor: pointer;
 }
 
+.promo-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kofi-btn{
+  transition: ease-in-out .2s;
+}
+
+.kofi-btn:hover{
+  opacity: .7;
+}
+
+.kofi-btn:active{
+  transform: scale(.9);
+}
+
 .actual-blog{
   display: flex;
   flex-direction: column;
@@ -952,6 +970,12 @@ p{
   .certificates-section .certificates-header{
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .promo-section{
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .blog{
