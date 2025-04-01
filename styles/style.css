@@ -9,6 +9,7 @@
   --clr-black: hsl(0, 0%, 0%);
   --clr-menu-clr: hsl(219, 66%, 7%);
   --clr-menu-btn: hsl(219, 65%, 12%);
+  --clr-code-block: hsl(0, 0%, 12%);
   --fw-thin: 400;
   --fw-normal: 500;
   --fw-semibold: 600;
@@ -22,6 +23,7 @@
   --clr-white-50: hsla(0, 0%, 0%, 0.8);
   --clr-hover-100: hsla(0, 0%, 0%, 0.2);
   --clr-hover-200: hsla(0, 0%, 0%, 0.8);
+  --clr-code-block: hsl(0, 0%, 85%);
   --clr-black: #fff;
   --clr-hover-300: hsl(0, 0%, 62%);
   --clr-menu-clr: hsl(0, 0%, 0%);
@@ -104,6 +106,14 @@ textarea{
 #root,
 #__next {
   isolation: isolate;
+}
+
+a{
+  transition: .2s ease-in-out;
+}
+
+a:hover{
+  opacity: .8;
 }
 
 /* NAVBAR */
@@ -704,9 +714,10 @@ main .blogs-section{
 }
 
 .actual-blog img{
-  width: max-content;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 0 auto;
 }
 
@@ -890,6 +901,24 @@ p{
   background-image: url(/assets/icons/mail-icon.svg);
   background-repeat: no-repeat;
   background-position: center right 15px;
+}
+
+.code-container {
+  background-color: var(--clr-code-block);
+  color: var(--clr-white-50);
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+  white-space: pre;  
+  max-width: 100%;  
+  box-sizing: border-box;
+}
+
+.actual-blog article{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (max-width: 850px) {
