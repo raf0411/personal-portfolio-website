@@ -12,6 +12,8 @@ const nameErrorLbl = document.getElementById("name-error-lbl");
 const emailErrorLbl = document.getElementById("email-error-lbl");
 const msgErrorLbl = document.getElementById("msg-error-lbl");
 
+const scrollThreshold = 300;
+
 let lightmode = localStorage.getItem('lightmode');
 
 updateYear();
@@ -23,6 +25,8 @@ function updateYear() {
   let currentYear = new Date().getFullYear();
   year.textContent = currentYear;
 }
+
+// Dark/Light Mode Toggle
 
 function enableLightMode() {
   localStorage.setItem("lightmode", "active");
@@ -42,6 +46,8 @@ function checkLightMode() {
   }
 }
 
+// Hamburger Menu Toggle
+
 function displayHiddenMenu() {
   hiddenMenu.classList.toggle("active");
 }
@@ -49,6 +55,8 @@ function displayHiddenMenu() {
 function removeHiddenMenu() {
   hiddenMenu.classList.remove("active");
 }
+
+// Contact Form Functionality
 
 function validateContactForm() {
   if (nameInput.value === "" && emailInput.value === "" && msgInput.value === "") {
@@ -100,3 +108,34 @@ darkLightModeBtn.addEventListener("click", () => {
   lightmode = localStorage.getItem('lightmode');
   lightmode !== "active" ? enableLightMode() : enableDarkMode();
 });
+
+
+// Scroll to Top Functionality
+const backToTopBtn = document.getElementById("back-to-top-btn");
+
+function toggleBackToTopButton() {
+  if (!backToTopBtn) {
+    return; 
+  }
+
+  if (window.scrollY > scrollThreshold) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,             
+    behavior: 'smooth'
+  });
+}
+
+window.addEventListener("scroll", toggleBackToTopButton);
+
+if (backToTopBtn) {
+  backToTopBtn.addEventListener("click", scrollToTop);
+}
+
+toggleBackToTopButton();

@@ -14,6 +14,8 @@
   --fw-normal: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
+  --clr-float-btn: hsla(350, 71%, 23%, .5);
+  --clr-float-btn-icon: hsla(0, 0%, 100%, 0.8);
 }
 
 .lightmode{
@@ -24,10 +26,12 @@
   --clr-hover-100: hsla(0, 0%, 0%, 0.2);
   --clr-hover-200: hsla(0, 0%, 0%, 0.8);
   --clr-code-block: hsl(0, 0%, 85%);
-  --clr-black: #fff;
+  --clr-black: hsl(0, 0%, 100%);
   --clr-hover-300: hsl(0, 0%, 62%);
   --clr-menu-clr: hsl(0, 0%, 0%);
   --clr-menu-btn: hsl(0, 0%, 100%);
+  --clr-float-btn: hsl(0, 0%, 0%);
+  --clr-float-btn-icon: hsl(0, 0%, 100%);
 }
 
 *,
@@ -919,6 +923,38 @@ p{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+#back-to-top-btn {
+  position: fixed; 
+  bottom: 50px;   
+  right: 50px;    
+  z-index: 99;    
+  width: 60px;
+  height: 60px;
+  background-color: var(--clr-float-btn); 
+  color: white;           
+  border: none;      
+  border-radius: 50%;    
+  padding: 15px;          
+  cursor: pointer;        
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5); 
+  transition: .2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#back-to-top-btn.show:hover{
+  opacity: .725;
+}
+
+#back-to-top-btn.show:active{
+  transform: scale(.9);
+}
+
+#back-to-top-btn.show{
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 850px) {
