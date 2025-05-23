@@ -523,9 +523,13 @@ main .intro-section .left-container{
   row-gap: 2rem;
 }
 
+.certificate .source{
+  font-weight: var(--fw-bold);
+}
+
 .certificate .certificate-title{
   font-size: .825rem;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-normal);
   word-break: keep-all;
 }
 
@@ -533,7 +537,7 @@ main .intro-section .left-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border: 1px solid var(--clr-hover-100);
   border-radius: 8px;
   padding: 2rem;
@@ -542,7 +546,7 @@ main .intro-section .left-container{
 }
 
 .certificate img{
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px;
 }
 
