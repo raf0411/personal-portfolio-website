@@ -1,0 +1,72 @@
+.skills-section .skills, .skills-section .learning{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.skills-section .skills .inner-skills{
+  max-width: 1000px;
+  width: 90%;
+  height: 70px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}
+
+@keyframes scrollleft{
+  to{
+    left: -300px;
+  }
+}
+
+.skills-section .skills .inner-skills span{
+  background-color: var(--clr-red);
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(100px * 7), 100%);
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  animation-name: scrollleft;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.inner-skills .item-1{
+  animation-delay: calc(15s / 8 * ( 8 - 1) * -1);
+}
+.inner-skills .item-2{
+  animation-delay: calc(15s / 8 * ( 8 - 2) * -1);
+}
+.inner-skills .item-3{
+  animation-delay: calc(15s / 8 * ( 8 - 3) * -1);
+}
+.inner-skills .item-4{
+  animation-delay: calc(15s / 8 * ( 8 - 4) * -1);
+}
+.inner-skills .item-5{
+  animation-delay: calc(15s / 8 * ( 8 - 5) * -1);
+}
+.inner-skills .item-6{
+  animation-delay: calc(15s / 8 * ( 8 - 6) * -1);
+}
+.inner-skills .item-7{
+  animation-delay: calc(15s / 8 * ( 8 - 7) * -1);
+  color: var(--clr-white);
+}
+
+/* (The actual code will be filled in the next step for brevity) */ 

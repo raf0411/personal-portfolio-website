@@ -1,0 +1,58 @@
+.publication-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.publication-section .publication{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--clr-hover-100);
+  border-radius: 4px;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.publication-section .publication img{
+  object-fit: contain;
+  width: 300px;
+  height: 150px;
+}
+
+.publication .inner-publication{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .825rem;
+}
+
+.publication .btn-container a i{
+  color: var(--clr-black);
+}
+
+.publish-site-btn{
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  padding: .2em 1em;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  opacity: .8;
+  transition: .2s;
+}
+
+.publish-site-btn:hover{
+  opacity: 1;
+}
+
+.publish-site-btn span{
+  font-size: .825rem;
+  font-weight: var(--fw-semibold);
+}
+
+/* (The actual code will be filled in the next step for brevity) */ 

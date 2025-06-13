@@ -1,0 +1,121 @@
+@media (max-width: 850px) {
+  nav{
+    flex-direction: row-reverse;
+    width: 70%;
+  }
+
+  body{
+    width: 70%;
+  }
+
+  main .intro-section{
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+  }
+  
+  .greeting{
+    font-size: 2rem;
+  }
+
+  .profile-img{
+    width: 500px;
+    aspect-ratio: 16/9;
+  }
+
+  nav ul{
+    display: none;
+    visibility: hidden;
+  }
+
+  .intro-section .left-container .socials{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hamburger-btn{
+    display: block;
+    visibility: visible;
+  }
+
+  .projects-section .projects{
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section .projects-header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .publication-section .publication{
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+  }
+
+  .publication img{
+    display: none;
+    visibility: hidden;
+  }
+
+  .publish-site-btn{
+    align-self: center;
+  }
+
+  .publication .inner-publication{
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .certificates{
+    grid-template-columns: 1fr;
+  }
+
+  .certificates-section .certificates-header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .promo-section{
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .blog{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .blog-details .blog-title{
+    font-size: 1.3rem;
+  }
+
+  .actual-blog img{
+    object-fit: contain;
+  }
+
+  .actual-blog .title-date h1{
+    font-size: 2rem;
+  }
+
+  .actual-blog pre{
+    overflow: hidden;
+  }
+  .actual-blog h2{
+    font-size: 1.3rem;
+  }
+
+  footer{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 490px){
+  .contact-section form .first-form{
+    flex-direction: column;
+  }
+} 

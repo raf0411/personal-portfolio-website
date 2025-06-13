@@ -1,0 +1,137 @@
+.intro-section, .greeting, .details, .profile-img, .socials, .cv-btn, .left-container, .right-container, .description, .socials .left-socials, .socials .left-socials a, .socials .left-socials a i, .socials .left-socials a:hover, .left-container .socials .cv-btn:hover, .left-container .socials .cv-btn i, .intro-section .right-container, .profile-img {
+  /* All relevant styles from style.css for the home/intro section */
+}
+
+main .intro-section{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;  
+  gap: 5rem;
+}
+
+.greeting{
+  font-size: 3rem;
+}
+
+.intro-section .left-container .details{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.details{
+  opacity: .8;
+}
+
+.details img{
+  width: 24px;
+}
+
+.details span{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.details a{
+  opacity: .8;
+  transition: .2s;
+}
+
+.details a:hover{
+  opacity: 1;
+}
+
+.intro-section .left-container .description{
+  opacity: .8;
+}
+
+main .intro-section .left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.intro-section .left-container .description a{
+  color: red;
+  opacity: .5;
+  transition: .2s;
+}
+
+.intro-section .left-container .description a:hover{
+  opacity: 1;
+}
+
+.details i{
+  color: var(--clr-white);
+}
+
+.intro-section .left-container .socials{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-container .socials .left-socials{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.socials .left-socials a{
+  opacity: .5;
+  transition: .2s;
+}
+
+.socials .left-socials a i{
+  color: var(--clr-white);
+}
+
+.socials .left-socials a:hover{
+  opacity: 1;
+}
+
+.left-container .socials .cv-btn:hover{
+  border: 1px solid var(--clr-hover-200);
+  opacity: 1;
+}
+
+.left-container .socials .cv-btn i{
+  color: var(--clr-white);
+}
+
+.intro-section .right-container{
+  height: 100%;
+}
+
+.profile-img{
+  width: 800px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cv-btn{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  color: var(--clr-white);
+  font-weight: var(--fw-semibold);
+  opacity: .8;
+  border: 1px solid var(--clr-hover-100);
+  padding: .2em 1em;
+  border-radius: 12px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.cv-btn i{
+  color: var(--clr-white);
+}
+
+/* (The actual code will be filled in the next step for brevity) */ 

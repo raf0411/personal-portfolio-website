@@ -1,0 +1,150 @@
+/* NAVBAR */
+.hidden-menu{
+  background-color: var(--clr-menu-clr);
+  height: 100dvh;
+  width: 100vw;
+  position: fixed;
+  left: -3000px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  z-index: 999;
+  transition: .5s ease;
+}
+
+.hidden-menu.active{
+  left: 0;
+}
+
+.hidden-menu ul li{
+  font-size: 1.3rem;
+  color: var(--clr-white-50);
+  font-weight: var(--fw-semibold);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden-menu ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.close-hidden-menu-btn i{
+  color: #fff;
+}
+
+.hidden-menu .hidden-menu-header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.hidden-menu .hidden-menu-header h1{
+  color: #fff;
+}
+
+.dark-light-mode-btn{
+  opacity: .5;
+  border: none;
+  background: none;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  transition: .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-light-mode-btn i:last-child{
+  display: none;
+}
+
+.lightmode .dark-light-mode-btn i:first-child{
+  display: none;
+}
+
+.lightmode .dark-light-mode-btn i:last-child{
+  display: block;
+}
+
+.dark-light-mode-btn:hover{
+  background-color: var(--clr-hover-100);
+  opacity: 1;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  padding: 2rem 0;
+  backdrop-filter: blur(3px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  z-index: 99;
+  height: 90px;
+}
+
+nav ul{
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+
+nav ul li a{
+  font-weight: var(--fw-semibold);
+  opacity: .7;
+  transition: .2s;
+}
+
+nav ul li a:hover{
+  opacity: 1;
+}
+
+.hamburger-btn{
+  display: none;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  transition: .2s;
+}
+
+.hamburger-btn:hover{
+  background-color: var(--clr-hover-100);
+  border-radius: 50%;
+}
+
+.hamburger-btn i{
+  color: var(--clr-white);
+}
+
+.menu-btn{
+  background-color: var(--clr-menu-btn);
+  display: block;
+  width: 100%;
+  align-self: center;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  transition: .5s ease;
+}
+
+.menu-btn:hover{
+  background-color: var(--clr-hover-300);
+} 

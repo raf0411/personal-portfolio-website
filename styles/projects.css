@@ -1,0 +1,74 @@
+.projects-section{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.projects-section .projects-header{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-section .projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.project{
+  border: 1px solid var(--clr-hover-100);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project .tools, .project .demo{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tools span{
+  background-color: var(--clr-red);
+  padding: .3em .5em;
+  border-radius: 4px;
+}
+
+.demo a{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: var(--fw-semibold);
+  font-size: .825rem;
+  padding:  .3em .5em;
+  border-radius: 8px;
+  transition: .2s;
+  opacity: .8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.demo a:hover{
+  opacity: 1;
+}
+
+.project img{
+  border-radius: 12px;
+}
+
+.project-title{
+  font-size: 1.3rem;
+}
+
+/* (The actual code will be filled in the next step for brevity) */ 

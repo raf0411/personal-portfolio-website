@@ -1,0 +1,51 @@
+.certificates-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.certificates-section .certificates-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.certificates{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.certificate .source{
+  font-weight: var(--fw-bold);
+}
+
+.certificate .certificate-title{
+  font-size: .825rem;
+  font-weight: var(--fw-normal);
+  word-break: keep-all;
+}
+
+.certificate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid var(--clr-hover-100);
+  border-radius: 8px;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.certificate img{
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* (The actual code will be filled in the next step for brevity) */ 

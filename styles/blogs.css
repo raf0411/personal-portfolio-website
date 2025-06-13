@@ -1,0 +1,117 @@
+.blogs-section, .blog, .blog:hover, .blog .blog-details, .blog-date, .content, .blog-list, .actual-blog, .actual-blog .title-date, .actual-blog h2, .actual-blog .title-date h1, .actual-blog img, .actual-blog article {
+  /* All relevant styles from style.css for the blogs section */
+}
+
+main .blogs-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.blog{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--clr-hover-100);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  transition: .2s;
+}
+
+.blog:hover{
+  border: 1px solid var(--clr-hover-200);
+}
+
+.blog .blog-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 70%;
+}
+
+.blog-date{
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+}
+
+.content{
+  text-align: start;
+  font-size: .925rem;
+  line-height: 1.75rem;
+}
+
+.blog-list{
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+.actual-blog{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.actual-blog .title-date{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .3rem;
+}
+
+.actual-blog h2{
+  font-size: 1.5rem;
+}
+
+.actual-blog .title-date h1{
+  font-size: 2.3rem;
+}
+
+.actual-blog img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.actual-blog article{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.promo-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kofi-btn{
+  transition: ease-in-out .2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.kofi-btn:hover{
+  opacity: .7;
+}
+
+.kofi-btn:active{
+  transform: scale(.9);
+}
+
+/* (The actual code will be filled in the next step for brevity) */ 

@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../styles/style.css">
 
   <!-- SCRIPTS -->
-  <script src="../../js/script.js"defer></script>
   <script src="https://kit.fontawesome.com/7139eb52d7.js" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" defer></script>
 
@@ -104,7 +103,7 @@
         <article>
           <h2>INTRODUCTION</h2>
           <p class="content">
-            Hi guys, in this brief tutorial I want to show y’all things I’ve learned when I did a Udemy Course on Android Development, particularly on how we would fetch an API request from an API such as the Pokemon API (https://pokeapi.co/), because who doesn’t love Pokemon, right?
+            Hi guys, in this brief tutorial I want to show y'all things I've learned when I did a Udemy Course on Android Development, particularly on how we would fetch an API request from an API such as the Pokemon API (https://pokeapi.co/), because who doesn't love Pokemon, right?
           </p>
         </article>
 
@@ -511,11 +510,11 @@ class MainViewModel : ViewModel() {
           </pre>
   
           <p class="content">
-            In this file, we will also handle the randomizing logic for every time the user click the Random Button in our app. We’re basically randomizing the index that will be shown to specify a specific Pokemon based on the index by modifying the endpoint in our PokemonApiService when we are trying to fetch a single Pokemon.
+            In this file, we will also handle the randomizing logic for every time the user click the Random Button in our app. We're basically randomizing the index that will be shown to specify a specific Pokemon based on the index by modifying the endpoint in our PokemonApiService when we are trying to fetch a single Pokemon.
           </p>
   
           <p class="content">
-            That’s it, now that our ViewModel is done, we can continue displaying the Pokemon information to the screen based on the UI we have created previously.
+            That's it, now that our ViewModel is done, we can continue displaying the Pokemon information to the screen based on the UI we have created previously.
           </p>
         </article>
 
@@ -612,7 +611,7 @@ fun PokemonItem(pokemon: Pokemon, sprites: Sprites) {
           </pre>
   
           <p class="content">
-            Back to our PokemonScreen composable function, we will be putting some code to our TODO’s comments, but first, copy and paste this code in the beginning of the composable function
+            Back to our PokemonScreen composable function, we will be putting some code to our TODO's comments, but first, copy and paste this code in the beginning of the composable function
           </p>
   
           <pre class="code-container">
@@ -650,7 +649,7 @@ when {
           </pre>
   
           <p class="content">
-            Notice that the pokemonViewState is dictating the display information that is being shown on the screen, if the state is loading, then it’ll show the CircularProgressIndicator, when its in state error, it’ll show the “ERROR OCCURRED!” text. But, if all went well, then it’ll show the randomized Pokemon to the screen.
+            Notice that the pokemonViewState is dictating the display information that is being shown on the screen, if the state is loading, then it'll show the CircularProgressIndicator, when its in state error, it'll show the "ERROR OCCURRED!" text. But, if all went well, then it'll show the randomized Pokemon to the screen.
           </p>
   
           <p class="content">
@@ -746,7 +745,7 @@ fun PokemonScreen() {
           </pre>
   
           <p class="content">
-            Now its done! We can now display the Pokémon’s name, ID, weight, & height based on the response we get from the API calls. Lastly, for the final part of our code, we can go back to the MainActivity and place this code below to start our PokemonScreen on start up
+            Now its done! We can now display the Pokémon's name, ID, weight, & height based on the response we get from the API calls. Lastly, for the final part of our code, we can go back to the MainActivity and place this code below to start our PokemonScreen on start up
           </p>
   
           <pre class="code-container">
@@ -771,7 +770,7 @@ class MainActivity : ComponentActivity() {
           </pre>
   
           <p class="content">
-            If there were previously some default code that the Android Template created like “Greetings”, you can just simply remove it and place the code above to replace the MainActivity class
+            If there were previously some default code that the Android Template created like "Greetings", you can just simply remove it and place the code above to replace the MainActivity class
           </p>
   
           <p class="content">
@@ -779,7 +778,7 @@ class MainActivity : ComponentActivity() {
           </p>
   
           <p class="content">
-            But wait, you may see that the app crashes once we start to boot it up. This is because we haven’t let Android to have permission to access the Internet because the API calls requires us to access the Internet, we can fix this by going to the AndroidManifest.xml file located in the manifests folder
+            But wait, you may see that the app crashes once we start to boot it up. This is because we haven't let Android to have permission to access the Internet because the API calls requires us to access the Internet, we can fix this by going to the AndroidManifest.xml file located in the manifests folder
           </p>
   
           <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*fBYGd6Rry-2bdqwh9lgKrQ.png" alt="AndroidManifest file">
@@ -811,7 +810,7 @@ class MainActivity : ComponentActivity() {
           </p>
   
           <p class="content">
-            Some key takeaways that we’ve learned:
+            Some key takeaways that we've learned:
           </p>
   
           <ul class="blog-list">
@@ -847,5 +846,6 @@ class MainActivity : ComponentActivity() {
   <button class="back-to-top-btn" id="back-to-top-btn">
     <i class="fa-solid fa-chevron-up" style="color: var(--clr-float-btn-icon)"></i>
   </button>
+  <script type="module" src="../../js/main.js"></script>
 </body>
 </html>
