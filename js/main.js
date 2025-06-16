@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupBackToTop();
   setupLoadingBar();
 
-  // Dark/Light mode button
   const darkLightModeBtn = document.getElementById("dark-light-mode-btn");
   if (darkLightModeBtn) {
     darkLightModeBtn.addEventListener("click", () => {
@@ -22,4 +21,26 @@ document.addEventListener('DOMContentLoaded', () => {
       lightmode !== "active" ? enableLightMode() : enableDarkMode();
     });
   }
+
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function setTheme(theme) {
+    document.body.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+    themeIcon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+  }
+
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else {
+    setTheme(prefersDarkScheme.matches ? 'dark' : 'light');
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const newTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  });
 }); 

@@ -117,7 +117,6 @@ textarea{
   isolation: isolate;
 }
 
-// Utility classes
 .error-lbl {
   color: red !important;
   font-size: 0.95em;
@@ -208,11 +207,4 @@ textarea{
 #top-loading-bar.done {
   opacity: 0;
   transition: opacity 0.3s 0.3s;
-}
-
-.page-blur {
-  filter: blur(6px) brightness(0.8);
-  transition: filter 0.3s cubic-bezier(0.4,0,0.2,1);
-  pointer-events: none;
-  user-select: none;
 } 

@@ -77,4 +77,6 @@
   background-position: center right 15px;
 }
 
-/* (The actual code will be filled in the next step for brevity) */ 
+.contact-section .error-lbl {
+  color: red !important;
+}

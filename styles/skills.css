@@ -67,6 +67,4 @@
 .inner-skills .item-7{
   animation-delay: calc(15s / 8 * ( 8 - 7) * -1);
   color: var(--clr-white);
-}
-
-/* (The actual code will be filled in the next step for brevity) */ 
+} 

@@ -1,6 +1,4 @@
-.intro-section, .greeting, .details, .profile-img, .socials, .cv-btn, .left-container, .right-container, .description, .socials .left-socials, .socials .left-socials a, .socials .left-socials a i, .socials .left-socials a:hover, .left-container .socials .cv-btn:hover, .left-container .socials .cv-btn i, .intro-section .right-container, .profile-img {
-  /* All relevant styles from style.css for the home/intro section */
-}
+.intro-section, .greeting, .details, .profile-img, .socials, .cv-btn, .left-container, .right-container, .description, .socials .left-socials, .socials .left-socials a, .socials .left-socials a i, .socials .left-socials a:hover, .left-container .socials .cv-btn:hover, .left-container .socials .cv-btn i, .intro-section .right-container, .profile-img {}
 
 main .intro-section{
   width: 100%;
@@ -133,5 +131,3 @@ main .intro-section .left-container{
 .cv-btn i{
   color: var(--clr-white);
 }
-
-/* (The actual code will be filled in the next step for brevity) */ 

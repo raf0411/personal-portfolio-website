@@ -28,22 +28,22 @@ export function setupLoadingBar() {
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    const main = document.querySelector('main') || document.body;
-    // If navigating, keep blur and bar until window.onload
-    if (navigating) {
-      main.classList.add('page-blur');
-      const bar = document.getElementById('top-loading-bar');
-      bar.style.opacity = '1';
+    // Show loading bar on initial page load
+    const bar = document.getElementById('top-loading-bar');
+    bar.classList.remove('done');
+    bar.style.width = '0%';
+    bar.style.opacity = '1';
+    setTimeout(() => {
       bar.style.width = '100%';
-    } else {
-      main.classList.add('page-blur');
-    }
-    window.addEventListener('load', function() {
-      main.classList.remove('page-blur');
-      const bar = document.getElementById('top-loading-bar');
+    }, 10);
+    setTimeout(() => {
       bar.classList.add('done');
       bar.style.width = '0%';
       bar.style.opacity = '0';
+    }, 700);
+
+    window.addEventListener('load', function() {
+      // No-op, handled above
       navigating = false;
     });
     document.body.addEventListener('click', function(e) {
